@@ -1,10 +1,8 @@
-import { useTranslation } from "react-i18next";
 import { useTheme } from "../../context/ThemeContext";
 import { CiLight, CiDark } from "react-icons/ci";
 
 function DarkMode() {
   const { toggleTheme, theme } = useTheme();
-  const { t } = useTranslation();
   return (
     <div>
       <button
