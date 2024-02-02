@@ -5,7 +5,7 @@ module.exports = {
     extend: {
       colors: {
         lightMode: {
-          background: "#f8f8f8",
+          background: "#f2e9e9",
           text: "#333333",
           border: "#dddddd",
         },

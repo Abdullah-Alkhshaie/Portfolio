@@ -6,7 +6,7 @@ function DarkMode() {
   return (
     <div>
       <button
-        className={`
+        className={` flex items-center
        
       `}
         onClick={toggleTheme}

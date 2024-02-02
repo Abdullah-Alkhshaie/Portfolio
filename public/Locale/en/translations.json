@@ -1,6 +1,9 @@
 {
-  "welcome": "Hello English",
   "language": "English",
-  "darkMode": "dark mode",
-  "lightMode": "light mode"
+  "name": "Abdullah Alkhushaie",
+  "title": "Frontend Developer",
+  "info": "I specilize in creating and implemenitng visually engaging elements for websites and applications as a Frontend Developer",
+  "about": "About",
+  "projects": "Projects",
+  "skills": "Skills"
 }
