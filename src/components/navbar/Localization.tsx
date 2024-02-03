@@ -1,4 +1,4 @@
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import LocalezationContext from "../../context/LocalezationContext";
 import i18n from "../../i18n";
 import { SA, US } from "country-flag-icons/react/3x2";
@@ -7,14 +7,19 @@ import { useTheme } from "../../context/ThemeContext";
 function Localization() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
   const [locale, setLocale] = useState<string>("en");
+  const isMounted = useRef(true);
 
-  i18n.on("languageChanged", (lng) => setLocale(i18n.language));
+  useEffect(() => {
+    const handleLanguageChange = (lng: string) => {
+      setLocale(lng);
+    };
 
-  const handleChange = (selectedLocale: string) => {
-    i18n.changeLanguage(selectedLocale);
-    setLocale(selectedLocale);
-    setShowMenu(false);
-  };
+    i18n.on("languageChanged", handleLanguageChange);
+
+    return () => {
+      i18n.off("languageChanged", handleLanguageChange);
+    };
+  }, []);
 
   useEffect(() => {
     if (locale === "ar") {
@@ -23,6 +28,19 @@ function Localization() {
       document.documentElement.dir = "ltr";
     }
   }, [locale]);
+
+  const handleChange = (selectedLocale: string) => {
+    i18n.changeLanguage(selectedLocale);
+    setLocale(selectedLocale);
+    setShowMenu(false);
+  };
+
+  useEffect(() => {
+    isMounted.current = true;
+    return () => {
+      isMounted.current = false;
+    };
+  }, []);
 
   const handleMenu = () => {
     setShowMenu(!showMenu);

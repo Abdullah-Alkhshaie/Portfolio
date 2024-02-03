@@ -11,7 +11,7 @@ function App() {
 
   return (
     <div
-      className={`h-screen  ${
+      className={`md:h-screen  ${
         theme === "dark"
           ? "bg-darkMode-background text-darkMode-text "
           : " bg-lightMode-background text-lightMode-text "
@@ -19,7 +19,7 @@ function App() {
     >
       <Navbar />
       <BrowserRouter>
-        <div className="flex h-[90vh]">
+        <div className="flex md:flex-row flex-col md:h-[90vh]">
           <div className="flex-1 ">
             <Home />
           </div>
