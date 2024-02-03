@@ -18,13 +18,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
@@ -41,13 +41,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
@@ -64,13 +64,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
@@ -87,13 +87,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
@@ -110,13 +110,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
@@ -133,13 +133,13 @@ function Projects() {
           <div className="flex gap-5 rtl:justify-end ">
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               Github
             </a>
             <a
               className="underline text-blue-600 hover:text-blue-300 duration-300"
-              href=""
+              href="#"
             >
               View Site
             </a>
