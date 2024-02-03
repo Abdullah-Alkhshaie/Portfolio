@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { Link } from "react-router-dom";
 import { useTheme } from "../context/ThemeContext";
+import Contact from "./navbar/Contact";
 
 function Home() {
   const { t } = useTranslation();
@@ -12,11 +13,11 @@ function Home() {
     setActiveLink(link);
   };
   return (
-    <div className="flex flex-col justify-center h-full my-20 md:mb-0 px-2 md:px-10">
-      <h1 className=" text-3xl md:text-6xl  "> {t("name")} </h1>
-      <h3 className=" text-xl md:text-2xl my-5">{t("title")}</h3>
+    <div className="flex flex-col h-full py-20  px-2 md:px-10">
+      <h1 className=" text-3xl md:text-7xl xl:text-8xl  "> {t("name")} </h1>
+      {/* <h3 className=" text-xl md:text-2xl my-5">{t("title")}</h3> */}
       <p
-        className={`text-lg   ${
+        className={`text-lg md:text-2xl my-10  ${
           theme === "dark"
             ? "text-darkMode-textgray "
             : "text-lightMode-textgray"
@@ -24,11 +25,11 @@ function Home() {
       >
         {t("info")}
       </p>
-      <div className="mt-10 w-fit ">
+      <div className=" w-fit ">
         <Link to="/">
           <p
             onClick={() => handleClick("about")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg  ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer  text-lg md:text-2xl  ${
               theme === "dark"
                 ? `hover:text-darkMode-text text-darkMode-textgray ${
                     activeLink === "about" ? "text-red-100" : ""
@@ -44,7 +45,7 @@ function Home() {
         <Link to="/projects">
           <p
             onClick={() => handleClick("projects")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg text-darkMode-textgray ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-2xl text-darkMode-textgray ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
                     activeLink === "projects" ? "text-red-100" : ""
@@ -60,7 +61,7 @@ function Home() {
         <Link to="/skills">
           <p
             onClick={() => handleClick("skills")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg text-darkMode-textgray ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-2xl text-darkMode-textgray ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
                     activeLink === "skills" ? "text-red-100" : ""
@@ -73,6 +74,9 @@ function Home() {
             {t("skills")}
           </p>
         </Link>
+      </div>
+      <div className="mt-10 lg:mt-auto">
+        <Contact />
       </div>
     </div>
   );
