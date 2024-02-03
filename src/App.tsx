@@ -19,7 +19,7 @@ function App() {
     >
       <Navbar />
       <BrowserRouter>
-        <div className="flex md:flex-row flex-col md:h-[90vh]">
+        <div className="flex lg:flex-row flex-col md:h-[90vh]">
           <div className="flex-1 ">
             <Home />
           </div>
