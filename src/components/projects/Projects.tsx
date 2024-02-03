@@ -1,7 +1,3 @@
-import bitsImg from "../../assets/images/bites.webp";
-import moviesImg from "../../assets/images/movie.webp";
-import comfyImg from "../../assets/images/comfy.webp";
-import megashopImg from "../../assets/images/mega.webp";
 import { useTranslation } from "react-i18next";
 
 function Projects() {
