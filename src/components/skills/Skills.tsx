@@ -42,7 +42,7 @@ function Skills() {
       <div className="grid md:grid-cols-2 lg:grid-cols-1  lg:place-items-end gap-2 ">
         {skill.map((skill, i) => (
           <div
-            className="flex items-center justify-between lg:w-[400px] md:w-[300px] gap-4 bg-gray- shadow-sm rounded-md px-2 h-16  "
+            className="flex items-center justify-between lg:w-[400px] md:w-[300px] gap-4 bg-gray- shadow-md rounded-md px-2 h-16  "
             key={i}
           >
             <p

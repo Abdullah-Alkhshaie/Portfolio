@@ -19,7 +19,7 @@ function App() {
   };
   return (
     <div
-      className={`h-full md:h-screen 
+      className={`h-full lg:h-screen 
        ${
          theme === "dark"
            ? "bg-darkMode-background text-darkMode-text "
