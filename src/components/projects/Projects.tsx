@@ -9,11 +9,13 @@ import movieImg from "../../assets/images/movie.webp";
 import colorImg from "../../assets/images/color.webp";
 import stripeImg from "../../assets/images/stripe.webp";
 import { useState } from "react";
+import { useTheme } from "../../context/ThemeContext";
 
 function Projects() {
   const [activeProduct, setActiveProduct] = useState<number | null>(null);
 
   const { t } = useTranslation();
+  const { theme } = useTheme();
 
   const projectsData = [
     {
@@ -45,7 +47,7 @@ function Projects() {
   return (
     <div className="py-10  px-2 md:px-10 h-full lg:h-[90vh]">
       <h1 className="text-xl md:text-3xl">{t("projectHead")}:</h1>
-      <div className="mt-3 grid grid-cols-2 gap-2">
+      <div className="mt-3 grid gird-cols-1 md:grid-cols-2 gap-2">
         {projectsData.map((product, i) => (
           <div
             onMouseOver={() => setActiveProduct(i)}
@@ -54,9 +56,13 @@ function Projects() {
             className="relative"
           >
             <img src={product.img} className="w-[500px]" alt={product.name} />
-            <div className="absolute top-5">
+            <div className="absolute top-0">
               <h1
-                className={`text-xl bold font-bold bg-gray-600 p-1  ${
+                className={`text-lg bold font-bold ${
+                  theme === "dark"
+                    ? "bg-darkMode-background"
+                    : "bg-lightMode-background"
+                } p-1  ${
                   activeProduct === i
                     ? "w-full opacity-100   duration-700"
                     : "w-[0px] opacity-0   "
@@ -68,22 +74,30 @@ function Projects() {
             <div className="flex absolute z-10  gap-5 px-2">
               <a href="google.com">
                 <FaEye
-                  className={`cursor-pointer absolute text--600 ${
+                  className={`cursor-pointer absolute ${
+                    theme === "dark"
+                      ? "text-darkMode-text"
+                      : "text-darkMode-text"
+                  } ${
                     activeProduct === i
                       ? "opacite-100 duration-300 bottom-3 "
                       : "opacity-0 -bottom-2  -z-0"
                   } `}
-                  size={25}
+                  size={20}
                 />
               </a>
               <a href="google.com">
                 <TfiGithub
-                  className={`cursor-pointer absolute text--600 ${
+                  className={`cursor-pointer absolute ${
+                    theme === "dark"
+                      ? "text-darkMode-text"
+                      : "text-darkMode-text"
+                  } ${
                     activeProduct === i
                       ? "opacite-100 duration-500 bottom-3 left-14 "
                       : "opacity-0 -bottom-2  -z-0"
                   } `}
-                  size={25}
+                  size={20}
                 />
               </a>
             </div>
