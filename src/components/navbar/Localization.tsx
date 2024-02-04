@@ -3,6 +3,7 @@ import LocalezationContext from "../../context/LocalezationContext";
 import i18n from "../../i18n";
 import { SA, US } from "country-flag-icons/react/3x2";
 import { useTheme } from "../../context/ThemeContext";
+import { MdLanguage } from "react-icons/md";
 
 function Localization() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
@@ -58,12 +59,31 @@ function Localization() {
     >
       <LocalezationContext.Provider value={{ locale, setLocale }}>
         <div className=" cursor-pointer " onClick={handleMenu}>
-          <span className="flex items-center gap-1">
-            {locale === "en" ? (
-              <US title="United States" className="w-10" />
-            ) : (
-              <SA title="United States" className="w-10" />
-            )}
+          <span className="flex relative items-center gap-1">
+            <MdLanguage size={30} />
+            <div className="absolute bottom-0 z-10">
+              {locale === "en" ? (
+                <p
+                  className={`rounded-full text-[10px] w-4 h-4 flex items-center ${
+                    theme === "dark"
+                      ? "bg-darkMode-background text-darkMode-text"
+                      : "bg-lightMode-background text-lightMode-text"
+                  } `}
+                >
+                  En
+                </p>
+              ) : (
+                <p
+                  className={`rounded-full text-[10px] w-4 h-4 flex items-center ${
+                    theme === "dark"
+                      ? "bg-darkMode-background text-darkMode-text"
+                      : "bg-lightMode-background text-lightMode-text"
+                  } `}
+                >
+                  Ar
+                </p>
+              )}
+            </div>
           </span>
           <ul
             className={`m-0 p-2 mt-2 w-fit absolute  ${

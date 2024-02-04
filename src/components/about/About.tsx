@@ -5,7 +5,7 @@ function About() {
   const { t } = useTranslation();
   const { theme } = useTheme();
   return (
-    <div className="flex items-center lg:justify-end  px-2 md:px-10 py-10  ">
+    <div className="flex items-center lg:justify-end lg:h-[85vh] px-2 md:px-10 py-10  ">
       <p
         className={`leading-8 text-lg md:text-xl lg:w-[470px]   ${
           theme === "dark"

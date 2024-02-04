@@ -34,7 +34,7 @@ function Home() {
                     activeLink === "about" ? "text-red-100" : ""
                   }`
                 : `hover:text-lightMode-text text-lightMode-textgray ${
-                    activeLink === "about" ? "text-black" : ""
+                    activeLink === "about" ? "text-lightMode-text" : ""
                   }`
             }`}
           >
@@ -50,7 +50,7 @@ function Home() {
                     activeLink === "projects" ? "text-red-100" : ""
                   }`
                 : `hover:text-lightMode-text ${
-                    activeLink === "projects" ? "text-black" : ""
+                    activeLink === "projects" ? "text-lightMode-text" : ""
                   }`
             }`}
           >
@@ -66,7 +66,7 @@ function Home() {
                     activeLink === "skills" ? "text-red-100" : ""
                   }`
                 : `hover:text-lightMode-text ${
-                    activeLink === "skills" ? "text-black" : ""
+                    activeLink === "skills" ? "text-lightMode-text" : ""
                   }`
             }`}
           >
