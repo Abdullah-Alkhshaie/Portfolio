@@ -86,7 +86,7 @@ function Projects() {
               </h1>
             </div>
             <div className="flex absolute z-10  rtl:left-5 px-2">
-              <a target="_blank" href={product.site}>
+              <a rel="noreferrer" target="_blank" href={product.site}>
                 <FaEye
                   className={`cursor-pointer absolute ${
                     theme === "dark"
@@ -100,7 +100,7 @@ function Projects() {
                   size={20}
                 />
               </a>
-              <a target="_blank" href={product.github}>
+              <a rel="noreferrer" target="_blank" href={product.github}>
                 <TfiGithub
                   className={`cursor-pointer absolute ${
                     theme === "dark"
