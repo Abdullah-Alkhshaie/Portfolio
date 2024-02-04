@@ -94,7 +94,7 @@ function Projects() {
                       : "text-darkMode-text"
                   } ${
                     activeProduct === i
-                      ? "opacite-100 duration-500 bottom-3 left-14 "
+                      ? "opacite-100 duration-500 bottom-3 left-14 rtl:right-14 "
                       : "opacity-0 -bottom-2  -z-0"
                   } `}
                   size={20}
