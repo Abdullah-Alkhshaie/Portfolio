@@ -14,10 +14,10 @@ function Home() {
   };
   return (
     <div className="flex flex-col h-full py-20  px-2 md:px-10">
-      <h1 className=" text-3xl md:text-7xl xl:text-8xl  "> {t("name")} </h1>
-      {/* <h3 className=" text-xl md:text-2xl my-5">{t("title")}</h3> */}
+      <h1 className=" text-3xl md:text-6xl xl:text-7xl  "> {t("name")} </h1>
+      {/* <h3 className=" text-xl md:text-xl my-5">{t("title")}</h3> */}
       <p
-        className={`text-lg md:text-2xl my-10  ${
+        className={`text-lg md:text-xl my-10  ${
           theme === "dark"
             ? "text-darkMode-textgray "
             : "text-lightMode-textgray"
@@ -29,7 +29,7 @@ function Home() {
         <Link to="/">
           <p
             onClick={() => handleClick("about")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer  text-lg md:text-2xl  ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer  text-lg md:text-xl  ${
               theme === "dark"
                 ? `hover:text-darkMode-text text-darkMode-textgray ${
                     activeLink === "about" ? "text-red-100" : ""
@@ -45,7 +45,7 @@ function Home() {
         <Link to="/projects">
           <p
             onClick={() => handleClick("projects")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-2xl text-darkMode-textgray ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-xl text-darkMode-textgray ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
                     activeLink === "projects" ? "text-red-100" : ""
@@ -61,7 +61,7 @@ function Home() {
         <Link to="/skills">
           <p
             onClick={() => handleClick("skills")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-2xl text-darkMode-textgray ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-xl text-darkMode-textgray ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
                     activeLink === "skills" ? "text-red-100" : ""
