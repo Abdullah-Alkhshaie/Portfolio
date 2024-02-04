@@ -1,7 +1,3 @@
-import { FaHtml5, FaCss3, FaReact } from "react-icons/fa";
-import { IoLogoJavascript } from "react-icons/io5";
-import { SiTailwindcss, SiRedux, SiFirebase } from "react-icons/si";
-import { BiLogoTypescript } from "react-icons/bi";
 import { useTheme } from "../../context/ThemeContext";
 
 const skill = [
