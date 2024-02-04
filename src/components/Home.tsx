@@ -7,7 +7,7 @@ import Contact from "./navbar/Contact";
 function Home() {
   const { t } = useTranslation();
   const { theme } = useTheme();
-  const [activeLink, setActiveLink] = useState<string | null>(null);
+  const [activeLink, setActiveLink] = useState<string | null>("about");
 
   const handleClick = (link: string) => {
     setActiveLink(link);
@@ -15,7 +15,6 @@ function Home() {
   return (
     <div className="flex flex-col h-full py-10  px-2 md:px-10">
       <h1 className=" text-3xl md:text-6xl xl:text-7xl  "> {t("name")} </h1>
-      {/* <h3 className=" text-xl md:text-xl my-5">{t("title")}</h3> */}
       <p
         className={`text-lg md:text-xl my-5  ${
           theme === "dark"

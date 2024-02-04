@@ -19,7 +19,7 @@ function App() {
   };
   return (
     <div
-      className={`h-full lg:h-screen 
+      className={`h-full md:h-screen 
        ${
          theme === "dark"
            ? "bg-darkMode-background text-darkMode-text "
@@ -30,7 +30,7 @@ function App() {
     >
       <Navbar />
       <BrowserRouter>
-        <div className="flex border lg:flex-row flex-col lg:h-fit">
+        <div className="flex lg:flex-row flex-col lg:h-fit">
           <div className="flex-1 ">
             <Home />
           </div>
