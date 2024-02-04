@@ -65,16 +65,16 @@ function Projects() {
             onMouseOver={() => setActiveProduct(i)}
             onMouseLeave={() => setActiveProduct(null)}
             key={i}
-            className="relative rounded-lg "
+            className="relative rounded-md "
           >
             <img
               src={product.img}
-              className="w-[500px] rounded-lg"
+              className="w-[500px] rounded-md"
               alt={product.name}
             />
             <div className="absolute top-0 rtl:left-0">
               <h1
-                className={`text-lg bold  duration-700 rounded-br-lg font-bold ${
+                className={`text-lg px-2 duration-700 rounded-br-lg  ${
                   theme === "dark"
                     ? "bg-darkMode-background"
                     : "bg-lightMode-background"
@@ -115,7 +115,7 @@ function Projects() {
                 />
               </a>
             </div>
-            <div className="w-full h-full rounded-lg absolute bg-black opacity-80 hover:opacity-20 duration-300 top-0"></div>
+            <div className="w-full h-full rounded-md absolute bg-black opacity-50 hover:opacity-20 duration-300 top-0"></div>
           </div>
         ))}
       </div>
