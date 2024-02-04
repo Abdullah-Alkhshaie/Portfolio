@@ -4,9 +4,9 @@ function Projects() {
   const { t } = useTranslation();
 
   return (
-    <div className="py-10  lg:py-20 px-2 md:px-10 h-full lg:h-[90vh]">
+    <div className="py-10   px-2 md:px-10 h-full lg:h-[90vh]">
       <h1 className="text-xl md:text-3xl">{t("projectHead")}:</h1>
-      <div className="mt-3 overflow-y-auto h-[70vh] ">
+      <div className="mt-3 overflow-y-auto h-[80vh] ">
         <div className="  rounded-sm  p-1  ">
           <h1 className=" rtl:text-left  ">Megashop</h1>
           <p className="my-5">

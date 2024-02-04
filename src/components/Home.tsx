@@ -13,11 +13,11 @@ function Home() {
     setActiveLink(link);
   };
   return (
-    <div className="flex flex-col h-full py-20  px-2 md:px-10">
+    <div className="flex flex-col h-full py-10  px-2 md:px-10">
       <h1 className=" text-3xl md:text-6xl xl:text-7xl  "> {t("name")} </h1>
       {/* <h3 className=" text-xl md:text-xl my-5">{t("title")}</h3> */}
       <p
-        className={`text-lg md:text-xl my-10  ${
+        className={`text-lg md:text-xl my-5  ${
           theme === "dark"
             ? "text-darkMode-textgray "
             : "text-lightMode-textgray"
