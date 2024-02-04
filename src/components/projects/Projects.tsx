@@ -74,7 +74,7 @@ function Projects() {
             />
             <div className="absolute top-0 rtl:left-0">
               <h1
-                className={`text-lg px-2 duration-700 rounded-br-lg  ${
+                className={`text-md px-2 duration-700 rounded-br-lg  ${
                   theme === "dark"
                     ? "bg-darkMode-background"
                     : "bg-lightMode-background"
