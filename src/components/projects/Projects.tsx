@@ -57,7 +57,7 @@ function Projects() {
   ];
 
   return (
-    <div className="py-10  px-2 md:px-10 h-full lg:h-[85vh]">
+    <div className="py-10  px-2 md:px-10 h-full lg:h-[89vh]">
       <h1 className="text-xl md:text-3xl">{t("projectHead")}:</h1>
       <div className="mt-5 grid gird-cols-1 md:grid-cols-2 gap-2">
         {projectsData.map((product, i) => (

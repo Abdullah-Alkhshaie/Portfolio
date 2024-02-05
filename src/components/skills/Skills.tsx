@@ -38,7 +38,7 @@ const skill = [
 function Skills() {
   const { theme } = useTheme();
   return (
-    <div className="pt-3  px-2 md:px-10 h-full lg:h-[85vh] ">
+    <div className="pt-3  px-2 md:px-10 h-full lg:h-[89vh] ">
       <div className="grid md:grid-cols-2 lg:grid-cols-1  lg:place-items-end gap-2 ">
         {skill.map((skill, i) => (
           <div

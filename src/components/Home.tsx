@@ -28,12 +28,12 @@ function Home() {
         <Link to="/">
           <p
             onClick={() => handleClick("about")}
-            className={`mb-2 flex items-center duration-300 cursor-pointer  text-lg md:text-xl  ${
+            className={`mb-2 flex items-center duration-300 cursor-pointer text-lg md:text-xl text-darkMode-textgray ${
               theme === "dark"
                 ? `hover:text-darkMode-text text-darkMode-textgray ${
                     activeLink === "about" ? "text-red-100" : ""
                   }`
-                : `hover:text-lightMode-text text-lightMode-textgray ${
+                : `hover:text-lightMode-text  ${
                     activeLink === "about" ? "text-lightMode-text" : ""
                   }`
             }`}
