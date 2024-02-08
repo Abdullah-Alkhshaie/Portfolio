@@ -7,11 +7,10 @@ function DarkMode() {
     <div>
       <button
         className={` flex items-center
-       
       `}
         onClick={toggleTheme}
       >
-        {theme === "dark" ? <CiDark size={25} /> : <CiLight size={25} />}
+        {theme === "dark" ? <CiLight size={25} /> : <CiDark size={25} />}
       </button>
     </div>
   );

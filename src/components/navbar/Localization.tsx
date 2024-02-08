@@ -7,12 +7,16 @@ import { MdLanguage } from "react-icons/md";
 
 function Localization() {
   const [showMenu, setShowMenu] = useState<boolean>(false);
-  const [locale, setLocale] = useState<string>("en");
+  const [locale, setLocale] = useState<string>(() => {
+    const storedLocale = localStorage.getItem("preferredLocale");
+    return storedLocale || "en";
+  });
   const isMounted = useRef(true);
 
   useEffect(() => {
     const handleLanguageChange = (lng: string) => {
       setLocale(lng);
+      localStorage.setItem("preferredLocale", lng);
     };
 
     i18n.on("languageChanged", handleLanguageChange);
@@ -29,6 +33,22 @@ function Localization() {
       document.documentElement.dir = "ltr";
     }
   }, [locale]);
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (showMenu && !event.target) return;
+      const target = event.target as HTMLElement;
+      if (!target.closest("#language-button")) {
+        setShowMenu(false);
+      }
+    };
+
+    document.addEventListener("click", handleClickOutside);
+
+    return () => {
+      document.removeEventListener("click", handleClickOutside);
+    };
+  }, [showMenu]);
 
   const handleChange = (selectedLocale: string) => {
     i18n.changeLanguage(selectedLocale);
@@ -51,6 +71,7 @@ function Localization() {
 
   return (
     <div
+      id="language-button"
       className={` w-fit   ${
         theme === "dark"
           ? "bg-darkMode-background text-darkMode-text "
