@@ -18,11 +18,11 @@ function Contact() {
       <a
         rel="noopener noreferrer"
         target="_blank"
-        href="https://twitter.com/Dev_Abdullah1"
+        // href="https://twitter.com/Dev_Abdullah1"
       >
         <FaXTwitter
           size={23}
-          className="hover:scale-125 sca duration-300 cursor-ponter cursor-pointer"
+          className="hover:scale-125 sca duration-300 cursor-ponter cursor- cursor-not-allowed "
         />
       </a>
       <a

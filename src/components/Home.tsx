@@ -17,7 +17,7 @@ function Home() {
       <h1 className=" text-3xl md:text-6xl xl:text-7xl  "> {t("name")} </h1>
       <p
         className={`text-lg md:text-xl my-5  ${
-          theme === "dark" ? "text-darkMode-textgray " : "text-[#9603fb]gray"
+          theme === "dark" ? "text-darkMode-textgray " : "text-blue-700gray"
         }  `}
       >
         {t("info")}
@@ -31,8 +31,8 @@ function Home() {
                 ? `hover:text-darkMode-text text-darkMode-textgray ${
                     activeLink === "about" ? "text-red-100" : ""
                   }`
-                : `hover:text-[#9603fb]  ${
-                    activeLink === "about" ? "text-[#9603fb]" : ""
+                : `hover:text-blue-700  ${
+                    activeLink === "about" ? "text-blue-700" : ""
                   }`
             }`}
           >
@@ -47,8 +47,8 @@ function Home() {
                 ? `hover:text-darkMode-text ${
                     activeLink === "projects" ? "text-red-100" : ""
                   }`
-                : `hover:text-[#9603fb] ${
-                    activeLink === "projects" ? "text-[#9603fb]" : ""
+                : `hover:text-blue-700 ${
+                    activeLink === "projects" ? "text-blue-700" : ""
                   }`
             }`}
           >
@@ -63,8 +63,8 @@ function Home() {
                 ? `hover:text-darkMode-text ${
                     activeLink === "skills" ? "text-red-100" : ""
                   }`
-                : `hover:text-[#9603fb] ${
-                    activeLink === "skills" ? "text-[#9603fb]" : ""
+                : `hover:text-blue-700 ${
+                    activeLink === "skills" ? "text-blue-700" : ""
                   }`
             }`}
           >
