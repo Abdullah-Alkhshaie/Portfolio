@@ -6,8 +6,9 @@ import bitesImg from "../../assets/images/bites.webp";
 import comfyImg from "../../assets/images/comfy.webp";
 import megaImg from "../../assets/images/mega.webp";
 import movieImg from "../../assets/images/movie.webp";
-import colorImg from "../../assets/images/color.webp";
-import stripeImg from "../../assets/images/stripe.webp";
+// import colorImg from "../../assets/images/color.webp";
+// import stripeImg from "../../assets/images/stripe.webp";
+import dashboardImg from "../../assets/images/dashboard.png";
 import { useState } from "react";
 import { useTheme } from "../../context/ThemeContext";
 
@@ -31,6 +32,12 @@ function Projects() {
       site: "https://abdullah-alkhshaie.github.io/Netflex/",
     },
     {
+      img: dashboardImg,
+      name: "Dashboard",
+      github: "https://github.com/Abdullah-Alkhshaie/business-db",
+      site: "https://abdullah-alkhshaie.github.io/business-db/",
+    },
+    {
       img: bitesImg,
       name: "Bites",
       github: "https://github.com/Abdullah-Alkhshaie/Bites-4",
@@ -42,18 +49,18 @@ function Projects() {
       github: "https://github.com/Abdullah-Alkhshaie/comfy",
       site: "https://abdullah-alkhshaie.github.io/Comfy/",
     },
-    {
-      img: colorImg,
-      name: "Color Flipper",
-      github: "https://github.com/Abdullah-Alkhshaie/Color-Flipper",
-      site: "https://abdullah-alkhshaie.github.io/Color-Flipper/",
-    },
-    {
-      img: stripeImg,
-      name: "Stripe Menu",
-      github: "https://github.com/Abdullah-Alkhshaie/Strape-menu",
-      site: "https://abdullah-alkhshaie.github.io/Strape-menu/",
-    },
+    // {
+    //   img: colorImg,
+    //   name: "Color Flipper",
+    //   github: "https://github.com/Abdullah-Alkhshaie/Color-Flipper",
+    //   site: "https://abdullah-alkhshaie.github.io/Color-Flipper/",
+    // },
+    // {
+    //   img: stripeImg,
+    //   name: "Stripe Menu",
+    //   github: "https://github.com/Abdullah-Alkhshaie/Strape-menu",
+    //   site: "https://abdullah-alkhshaie.github.io/Strape-menu/",
+    // },
   ];
 
   return (
