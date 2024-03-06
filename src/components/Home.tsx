@@ -29,10 +29,10 @@ function Home() {
             className={`mb-2 flex items-center underline duration-300 cursor-pointer text-lg md:text-xl  text-blue-700 ${
               theme === "dark"
                 ? `hover:text-darkMode-text  ${
-                    activeLink === "about" ? "text-red-100" : ""
+                    activeLink === "about" && "text-red-100"
                   }`
                 : `hover:text-lightMode-text  ${
-                    activeLink === "about" ? "text-lightMode-text" : ""
+                    activeLink === "about" && "text-lightMode-text"
                   }`
             }`}
           >
@@ -45,10 +45,10 @@ function Home() {
             className={`mb-2 flex items-center underline duration-300 cursor-pointer text-lg md:text-xl  text-blue-700 ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
-                    activeLink === "projects" ? "text-red-100" : ""
+                    activeLink === "projects" && "text-red-100"
                   }`
                 : `hover:text-lightMode-text ${
-                    activeLink === "projects" ? "text-lightMode-text" : ""
+                    activeLink === "projects" && "text-lightMode-text"
                   }`
             }`}
           >
@@ -61,10 +61,10 @@ function Home() {
             className={`mb-2 flex items-center underline duration-300 cursor-pointer text-lg md:text-xl  text-blue-700 ${
               theme === "dark"
                 ? `hover:text-darkMode-text ${
-                    activeLink === "skills" ? "text-red-100" : ""
+                    activeLink === "skills" && "text-red-100"
                   }`
                 : `hover:text-lightMode-text ${
-                    activeLink === "skills" ? "text-lightMode-text" : ""
+                    activeLink === "skills" && "text-lightMode-text"
                   }`
             }`}
           >
